@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Playfair+Display:wght@500&display=swap');
+
+.recipename {
+    font-family: 'Croissant One', cursive;
+    font-size: 32px;
+    color:rgb(22, 44, 44);
+    text-align: center;
+    animation: recipename;
+    position:relative;
+    animation-duration: 2s;
+}
+
+@keyframes recipename {
+    0% {top: -250px;}
+    100% {top: 0px;}
+}
+
+body {
+    background-color: beige;
+    font-family: 'Playfair Display', serif;
+    color:rgb(22, 44, 44);
+    padding-left: 30px;
+    padding-right: 200px;
+}
+
+
+img {
+    width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
+    animation:img 1.5s linear;
+}
+
+@keyframes img { 
+    0% {transform: rotate(180deg)}
+    100% {transform:rotate(360);} 
+} 
+
+.ingredients {
+    opacity: 0;
+    animation: ingredients;
+    animation-delay: 2s;
+    animation-duration: 3s;
+    position: relative;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ingredients {
+    0% {opacity: 0;}
+    100% {opacity: 100;}
+}
+
+.ingredients-dough {
+    border: 1px solid;
+    text-align: center;
+    color:rgb(22, 44, 44);
+
+    
+}
+
+.instructions {
+    opacity: 0;
+    color:rgb(22, 44, 44);
+    animation: instructions;
+    animation-delay: 2s;
+    animation-duration: 3s;
+    position: relative;
+    animation-fill-mode: forwards;
+}
+
+@keyframes instructions {
+    0% {opacity: 0;}
+    100% {opacity: 100;}
+    
+}
